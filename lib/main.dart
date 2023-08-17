@@ -4,7 +4,11 @@ String shortHandGetFullName(String firstName, String lastName) =>
     '$firstName $lastName';
 
 String getFullName(String firstName, String lastName) {
-  return firstName + ' ' + lastName;
+  return '$firstName $lastName';
+}
+
+int getAge(int age) {
+  return age;
 }
 
 void main() {
@@ -20,6 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     print(shortHandGetFullName('Bugs', 'Bunny'));
     print(getFullName('Leonard', 'Nimoy'));
+    print(getAge(33));
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
