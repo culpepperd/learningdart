@@ -4,7 +4,7 @@ String shortHandGetFullName(String firstName, String lastName) =>
     '$firstName $lastName';
 
 String getFullName(String firstName, String lastName) {
-  return '$firstName $lastName';
+  return firstName + ' ' + lastName;
 }
 
 void main() {
