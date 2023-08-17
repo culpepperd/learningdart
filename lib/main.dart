@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    print(shortHandGetFullName('Lindsey', 'Loo'));
-    print(getFullName('Daniel', 'Culpepper'));
+    print(shortHandGetFullName('Bugs', 'Bunny'));
+    print(getFullName('Leonard', 'Nimoy'));
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
