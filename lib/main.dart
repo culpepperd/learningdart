@@ -1,30 +1,35 @@
+/*
+    *** BE SURE TO PULL FROM ORIGIN MASTER BEFORE EDITING ***
+    learningdart is shared between both laptop and Desktop.
+    *** BE SURE TO PULL FROM ORIGIN MASTER BEFORE EDITING ***
+*/
+
 import 'package:flutter/material.dart';
-
-String shortHandGetFullName(String firstName, String lastName) =>
-    '$firstName $lastName';
-
-String getFullName(String firstName, String lastName) {
-  return '$firstName $lastName';
-}
-
-int getAge(int age) {
-  return age;
-}
 
 void main() {
   runApp(const MyApp());
 }
 
-// test edit from Desktop
+// tutorial code below ***
+void test() {
+  final name = 'Daniel';
+  if (name == 'Daniel') {
+    print('Yes, this is Daniel');
+  } else {
+    print('No, this is not Daniel');
+  }
+}
+// tutorial code ends ***
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    print(shortHandGetFullName('Bugs', 'Bunny'));
-    print(getFullName('Leonard', 'Nimoy'));
-    print(getAge(33));
+    // tutorial code below ***
+    test();
+    // tutorial code ends ***
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
