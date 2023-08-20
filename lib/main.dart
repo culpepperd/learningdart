@@ -16,9 +16,13 @@ void test() {
   if (name == 'Daniel') {
     print('Yes, this is Daniel');
   } else if (name != 'Daniel') {
-    print('No, this is not Daniel');
+    print("No, this isn't Daniel"); // can use double quotes
+  } else if (name == 'Darnell') {
+    print('"This is Darnell"');
+  } else if (name == 'Bar Bell') {
+    print("\"This is Bar Bell\"");
   } else {
-    print('I dont know what this is.');
+    print('I don\'t know what this is.'); // must use \' if single quotes
   }
 }
 // tutorial code ends ***
