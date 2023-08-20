@@ -15,8 +15,10 @@ void test() {
   final name = 'Daniel';
   if (name == 'Daniel') {
     print('Yes, this is Daniel');
-  } else {
+  } else if (name != 'Daniel') {
     print('No, this is not Daniel');
+  } else {
+    print('I dont know what this is.');
   }
 }
 // tutorial code ends ***
