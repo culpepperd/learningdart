@@ -12,6 +12,17 @@ void main() {
 
 // tutorial code below ***
 void test() {
+  final names = ['Daniel', 'Naseeb', 'Culpepper'];
+  final firstName = names[0];
+  final middleName = names[1];
+  final lastName = names[2];
+  final fullName = "$firstName $middleName $lastName";
+
+  final namesLength = names.length;
+  print("$fullName made an array with $namesLength indeces.");
+}
+
+/*void test() {
   var age = 33;
   print(age);
   var halfOfAge = age / 2;
@@ -20,7 +31,7 @@ void test() {
   print(halfOfAge);
   print(doubleAge);
   print(ageMinusOne);
-}
+}*/
 
 /*void test() {
   const name = 'Daniel';
