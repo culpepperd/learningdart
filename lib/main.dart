@@ -12,14 +12,19 @@ void main() {
 
 // tutorial code below ***
 void test() {
-  final names = ['Daniel', 'Naseeb', 'Culpepper'];
-  final firstName = names[0];
-  final middleName = names[1];
-  final lastName = names[2];
+  // the following is a list
+  final namesList = ['Daniel', 'Naseeb', 'Culpepper'];
+  final firstName = namesList[0];
+  final middleName = namesList[1];
+  final lastName = namesList[2];
   final fullName = "$firstName $middleName $lastName";
 
-  final namesLength = names.length;
+  final namesLength = namesList.length;
   print("$fullName made an array with $namesLength indeces.");
+
+  // the following is a set. A set cannot contain 2 equivalent elements!
+  final namesSet = {'Daniel', 'Naseeb', 'Culpepper', 2, 5};
+  print(namesSet);
 }
 
 /*void test() {
