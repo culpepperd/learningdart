@@ -12,7 +12,18 @@ void main() {
 
 // tutorial code below ***
 void test() {
-  final name = 'Daniel';
+  var age = 33;
+  print(age);
+  var halfOfAge = age / 2;
+  var doubleAge = age * 2;
+  var ageMinusOne = --age;
+  print(halfOfAge);
+  print(doubleAge);
+  print(ageMinusOne);
+}
+
+/*void test() {
+  const name = 'Daniel';
   if (name == 'Daniel') {
     print('Yes, this is Daniel');
   } else if (name != 'Daniel') {
@@ -24,7 +35,7 @@ void test() {
   } else {
     print('I don\'t know what this is.'); // must use \' if single quotes
   }
-}
+} */
 // tutorial code ends ***
 
 class MyApp extends StatelessWidget {
