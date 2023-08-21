@@ -12,6 +12,14 @@ void main() {
 
 // tutorial code below ***
 void test() {
+  var person = {'age': 33, 'name': 'Daniel'};
+
+  print(person);
+  person['lastName'] = 'Culpepper';
+  print(person);
+}
+
+/*void test() {
   // the following is a list
   final namesList = ['Daniel', 'Naseeb', 'Culpepper'];
   final firstName = namesList[0];
@@ -25,7 +33,7 @@ void test() {
   // the following is a set. A set cannot contain 2 equivalent elements!
   final namesSet = {'Daniel', 'Naseeb', 'Culpepper', 2, 5};
   print(namesSet);
-}
+}*/
 
 /*void test() {
   var age = 33;
