@@ -12,6 +12,8 @@ void main() {
 
 // tutorial code below ***
 void test() {
+  // in Dart this is referred to as a map. 
+  // It appears to be very similar to an object in JavaScript
   var person = {'age': 33, 'name': 'Daniel'};
 
   print(person);
