@@ -12,6 +12,13 @@ void main() {
 
 // tutorial code below ***
 void test() {
+  String? name = null;
+  print(name);
+  name = 'Daniel';
+  print(name);
+}
+
+/*void test() {
   // in Dart this is referred to as a map. 
   // It appears to be very similar to an object in JavaScript
   var person = {'age': 33, 'name': 'Daniel'};
@@ -19,7 +26,7 @@ void test() {
   print(person);
   person['lastName'] = 'Culpepper';
   print(person);
-}
+}*/
 
 /*void test() {
   // the following is a list
