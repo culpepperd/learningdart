@@ -16,6 +16,7 @@ void test() {
   print(name);
   name = 'Daniel';
   print(name);
+  int? age = null;
 }
 
 /*void test() {
