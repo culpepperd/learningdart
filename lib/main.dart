@@ -18,6 +18,8 @@ void test() {
   names = null;
   print(names);
 
+  // Having the ? inside <int?> means that any of the
+  // values can be null
   List<int?> age = [22, 33, null];
   print(age);
   /* String? name = null;
