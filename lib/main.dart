@@ -12,13 +12,21 @@ void main() {
 
 // tutorial code below ***
 void test() {
-  String? name = null;
+  // Having the ? at the end of List<String>? means that
+  // the list itself can be null in its entirety
+  List<String>? names = ['Daniel', 'Culpepper'];
+  names = null;
+  print(names);
+
+  List<int?> age = [22, 33, null];
+  print(age);
+  /* String? name = null;
   print(name);
   name = 'Daniel';
   print(name);
   int? age = null;
   age = 33;
-  print("$name is $age years old.");
+  print("$name is $age years old."); */
 }
 
 /*void test() {
