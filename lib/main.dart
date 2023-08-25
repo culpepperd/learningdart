@@ -17,6 +17,8 @@ void test() {
   name = 'Daniel';
   print(name);
   int? age = null;
+  age = 33;
+  print("$name is $age years old.");
 }
 
 /*void test() {
