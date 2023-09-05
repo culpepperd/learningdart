@@ -14,7 +14,7 @@ void main() {
 void test() {
   // Having the ? at the end of List<String>? means that
   // the list itself can be null in its entirety
-  List<String>? names = ['Daniel', 'Culpepper'];
+  List<String?>? names = ['Daniel', 'Culpepper', null];
   names = null;
   print(names);
 
