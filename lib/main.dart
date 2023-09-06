@@ -12,12 +12,17 @@ void main() {
 
 // tutorial code begins ***
 
-void test() {
+void test(String? firstName, String? middleName, String? lastName) {
+  /*
   const String? firstName = null;
   const String? middleName = 'Naseeb';
   const String? lastName = 'Culpepper';
+  */
 
-  // bad code
+  // using ?? as logical "OR", but with relation to nullability
+  final firstNonNullValue = firstName ?? middleName ?? lastName;
+
+  // repetitive, verbose, bad code
   if (firstName != null) {
     print("first name is the first non-null value");
   } else if (middleName != null) {
