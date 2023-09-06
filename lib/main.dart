@@ -10,27 +10,49 @@ void main() {
   runApp(const MyApp());
 }
 
-// tutorial code below ***
+// tutorial code begins ***
+
 void test() {
-  // Having the ? at the end of List<String>? means that
-  // the list itself can be null in its entirety
+  const String? firstName = null;
+  const String? middleName = 'Naseeb';
+  const String? lastName = 'Culpepper';
+
+  // bad code
+  if (firstName != null) {
+    print("first name is the first non-null value");
+  } else if (middleName != null) {
+    print("middle name is the first non-null value");
+  } else if (lastName != null) {
+    print("last name is the first non-null value");
+  }
+}
+
+// "Optional" or "Nullable" Lists and values
+/* void test() {
+  /* Having the ? at the end of List<String>? means that
+     the list itself can be null in its entirety.
+     Having the ? after <String?> means that any of the 
+     contents are optional or nullable.*/
   List<String?>? names = ['Daniel', 'Culpepper', null];
   names = null;
   print(names);
 
-  // Having the ? inside <int?> means that any of the
+  // Having the ? after <int?> means that any of the
   // values can be null
   List<int?> age = [22, 33, null];
   print(age);
-  /* String? name = null;
+  /* 
+  String? name = null;
   print(name);
   name = 'Daniel';
   print(name);
   int? age = null;
   age = 33;
-  print("$name is $age years old."); */
-}
+  print("$name is $age years old."); 
+  */
+} */
 
+// Maps
 /*void test() {
   // in Dart this is referred to as a map. 
   // It appears to be very similar to an object in JavaScript
@@ -41,6 +63,7 @@ void test() {
   print(person);
 }*/
 
+// List
 /*void test() {
   // the following is a list
   final namesList = ['Daniel', 'Naseeb', 'Culpepper'];
@@ -57,6 +80,7 @@ void test() {
   print(namesSet);
 }*/
 
+// Variables and Math
 /*void test() {
   var age = 33;
   print(age);
@@ -68,6 +92,7 @@ void test() {
   print(ageMinusOne);
 }*/
 
+// if/else and "" ''
 /*void test() {
   const name = 'Daniel';
   if (name == 'Daniel') {
@@ -82,6 +107,7 @@ void test() {
     print('I don\'t know what this is.'); // must use \' if single quotes
   }
 } */
+
 // tutorial code ends ***
 
 class MyApp extends StatelessWidget {
