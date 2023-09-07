@@ -12,8 +12,20 @@ void main() {
 
 // tutorial code begins ***
 
+//****** CHP 6 - Dart Enumerations, Classes & Objects ******/
+
+// Enumerations: a named list of related items
+// You can categorize related items under an enumeration
+/*enum PersonalProperties { firstName, lastName, age }
+
+void test() {
+  print(PersonalProperties.firstName);
+}*/
+
+//********* CHP 5 - Null Safety *********/
+
 // Conditional Invocation of a method/property using ?. syntax
-void test(List<String>? names) {
+/*void test(List<String>? names) {
   // if names length is null, set the length variable to zero
   final length = names?.length ?? 0;
   names?.add('Daniel');
@@ -25,7 +37,7 @@ void test(List<String>? names) {
   } else {
     length = 0;
   }*/
-}
+}*/
 
 // Null-aware assignment operator ??=
 /*void test(String? firstName, String? middleName, String? lastName) {
