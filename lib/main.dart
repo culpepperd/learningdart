@@ -12,13 +12,28 @@ void main() {
 
 // tutorial code begins ***
 
+// Conditional Invocation of a method/property using ?. syntax
+void test(List<String>? names) {
+  // if names length is null, set the length variable to zero
+  final length = names?.length ?? 0;
+  names?.add('Daniel');
+
+  // the old way of checking without the ?. syntax
+  /*final int length;
+  if (names != null) {
+    length = names.length;
+  } else {
+    length = 0;
+  }*/
+}
+
 // Null-aware assignment operator ??=
-void test(String? firstName, String? middleName, String? lastName) {
+/*void test(String? firstName, String? middleName, String? lastName) {
   String? name = firstName;
   name ??= middleName;
   name ??= lastName;
   print(name);
-}
+}*/
 
 // Using the ?? operator
 /*void test(String? firstName, String? middleName, String? lastName) {
