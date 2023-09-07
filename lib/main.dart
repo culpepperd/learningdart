@@ -12,7 +12,16 @@ void main() {
 
 // tutorial code begins ***
 
+// Null-aware assignment operator ??=
 void test(String? firstName, String? middleName, String? lastName) {
+  String? name = firstName;
+  name ??= middleName;
+  name ??= lastName;
+  print(name);
+}
+
+// Using the ?? operator
+/*void test(String? firstName, String? middleName, String? lastName) {
   /*
   const String? firstName = null;
   const String? middleName = 'Naseeb';
@@ -23,6 +32,7 @@ void test(String? firstName, String? middleName, String? lastName) {
   final firstNonNullValue = firstName ?? middleName ?? lastName;
 
   // repetitive, verbose, bad code
+  // See above line for better code
   if (firstName != null) {
     print("first name is the first non-null value");
   } else if (middleName != null) {
@@ -30,7 +40,7 @@ void test(String? firstName, String? middleName, String? lastName) {
   } else if (lastName != null) {
     print("last name is the first non-null value");
   }
-}
+}*/
 
 // "Optional" or "Nullable" Lists and values
 /* void test() {
