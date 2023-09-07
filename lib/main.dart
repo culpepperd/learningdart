@@ -14,8 +14,20 @@ void main() {
 
 //****** CHP 6 - Dart Enumerations, Classes & Objects ******/
 
-// Classes
+// Constructors - create a class instance with optional parameters
 class Person {
+  final String name;
+  // Constructor
+  Person(this.name); // ctrl + . to populate options
+}
+
+void test() {
+  final person = Person('Daniel Culpepper');
+  print(person.name);
+}
+
+// Classes
+/*class Person {
   void run() {
     print('Running');
   }
@@ -32,7 +44,7 @@ void test() {
       Person(); // this is an instance of the Person class, called an Object.
   person.run;
   person.breathe;
-}
+}*/
 
 // Switch Statements - use in place of if/else for enumerations
 /*enum AnimalType { cat, dog, bunny }
