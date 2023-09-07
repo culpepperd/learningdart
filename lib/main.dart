@@ -14,6 +14,33 @@ void main() {
 
 //****** CHP 6 - Dart Enumerations, Classes & Objects ******/
 
+// Switch Statements - use in place of if/else for enumerations
+enum AnimalType { cat, dog, bunny }
+
+void test(AnimalType animalType) {
+  switch (animalType) {
+    case AnimalType.cat:
+      print("Cats are cool");
+      return;
+    case AnimalType.dog:
+      print("Dogs are dope");
+      return;
+    case AnimalType.bunny:
+      print("Bunnies are bomb-diggity-fresh");
+      break;
+  }
+
+  print("This will only print after break;");
+
+  /*if (animalType == AnimalType.cat) {
+    print("Cats are cool");
+  } else if (animalType == AnimalType.dog) {
+    print("Dogs are dope");
+  } else if (animalType == AnimalType.bunny) {
+    print("Bunnies are bomb-diggity-fresh");
+  }*/
+}
+
 // Enumerations: a named list of related items
 // You can categorize related items under an enumeration
 /*enum PersonalProperties { firstName, lastName, age }
@@ -159,7 +186,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // tutorial code below ***
-    test();
+    test(AnimalType.dog);
     // tutorial code ends ***
     return MaterialApp(
       title: 'Flutter Demo',
