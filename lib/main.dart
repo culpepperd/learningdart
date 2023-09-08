@@ -14,8 +14,23 @@ void main() {
 
 //****** CHP 6 - Dart Enumerations, Classes & Objects ******/
 
-// Constructors - create a class instance with optional parameters
+// Methods
 class Person {
+  final String name;
+  Person(this.name);
+
+  void printName() {
+    print(name);
+  }
+}
+
+void test() {
+  final person = Person('Daniel Culpepper');
+  person.printName();
+}
+
+// Constructors - create a class instance with optional parameters
+/*class Person {
   final String name;
   // Constructor
   Person(this.name); // ctrl + . to populate options
@@ -24,7 +39,7 @@ class Person {
 void test() {
   final person = Person('Daniel Culpepper');
   print(person.name);
-}
+}*/
 
 // Classes
 /*class Person {
