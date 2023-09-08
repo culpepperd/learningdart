@@ -14,8 +14,27 @@ void main() {
 
 //****** CHP 6 - Dart Enumerations, Classes & Objects ******/
 
-// Methods
-class Person {
+// Inheritance and Subclassing
+class LivingThing {
+  void breathe() {
+    print('It is breathing');
+  }
+
+  void move() {
+    print('It is moving.');
+  }
+}
+
+class Dog extends LivingThing {}
+
+void test() {
+  final jackShepard = Dog();
+  jackShepard.breathe();
+  jackShepard.move();
+}
+
+// Methods - functions of an object
+/*class Person {
   final String name;
   Person(this.name);
 
@@ -27,7 +46,7 @@ class Person {
 void test() {
   final person = Person('Daniel Culpepper');
   person.printName();
-}
+}*/
 
 // Constructors - create a class instance with optional parameters
 /*class Person {
