@@ -14,8 +14,37 @@ void main() {
 
 //****** CHP 6 - Dart Enumerations, Classes & Objects ******/
 
+// Factory Constructors - use when instantiating instances with the same name many times
+class Mammal {
+  String species; //field
+
+  Mammal(this.species) {
+    // Mammal constructor
+  }
+
+  // Factory Constructor
+  factory Mammal.dog() {
+    return Mammal('Dog');
+  }
+
+  void breathe() {
+    print('Breathing...');
+  }
+
+  void move() {
+    print('Moving...');
+  }
+}
+
+void test() {
+  final dog = Mammal.dog();
+  print(dog.species);
+  dog.breathe();
+  dog.move();
+}
+
 // Abstract Classes - contains logic for normal classes to use
-abstract class LivingThing {
+/*abstract class LivingThing {
   void breathe() {
     print('It is breathing');
   }
@@ -35,7 +64,7 @@ void test() {
   final jackShepard = Dog();
   jackShepard.breathe();
   jackShepard.move();
-}
+}*/
 
 // Inheritance and Subclassing
 /*class LivingThing {
