@@ -14,8 +14,31 @@ void main() {
 
 //****** CHP 6 - Dart Enumerations, Classes & Objects ******/
 
+// Abstract Classes - contains logic for normal classes to use
+abstract class LivingThing {
+  void breathe() {
+    print('It is breathing');
+  }
+
+  void move() {
+    print('It is moving');
+  }
+}
+
+class Dog extends LivingThing {}
+
+void test() {
+  // an abstract class cannot be instantiated
+  // final thing = LivingThing();
+
+  // but we can inherit an abstract class
+  final jackShepard = Dog();
+  jackShepard.breathe();
+  jackShepard.move();
+}
+
 // Inheritance and Subclassing
-class LivingThing {
+/*class LivingThing {
   void breathe() {
     print('It is breathing');
   }
@@ -31,7 +54,7 @@ void test() {
   final jackShepard = Dog();
   jackShepard.breathe();
   jackShepard.move();
-}
+}*/
 
 // Methods - functions of an object
 /*class Person {
