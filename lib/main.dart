@@ -14,13 +14,33 @@ void main() {
 
 //****** CHP 6 - Dart Enumerations, Classes & Objects ******/
 
+// Custom Operators
+class Cat {
+  final String name;
+  Cat(this.name);
+  @override
+  bool operator ==(covariant Cat other) => other.name == name;
+
+  @override
+  int get hashCode => name.hashCode;
+}
+
+void test() {
+  final cat1 = Cat('Mr. Whiskers');
+  final cat2 = Cat('Mr. Whiskers');
+  if (cat1 == cat2) {
+    print('They are equal');
+  } else {
+    print('They are not equal');
+  }
+}
+
 // Factory Constructors - use when instantiating instances with the same name many times
-class Mammal {
+/*class Mammal {
   String species; //field
 
-  Mammal(this.species) {
-    // Mammal constructor
-  }
+  // normal constructor
+  Mammal(this.species) {}
 
   // Factory Constructor
   factory Mammal.dog() {
@@ -41,7 +61,7 @@ void test() {
   print(dog.species);
   dog.breathe();
   dog.move();
-}
+}*/
 
 // Abstract Classes - contains logic for normal classes to use
 /*abstract class LivingThing {
