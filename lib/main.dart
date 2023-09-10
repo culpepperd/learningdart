@@ -15,7 +15,7 @@ void main() {
 //****** CHP 6 - Dart Enumerations, Classes & Objects ******/
 
 // Custom Operators
-class Cat {
+/*class Cat {
   final String name;
   Cat(this.name);
   @override
@@ -33,7 +33,7 @@ void test() {
   } else {
     print('They are not equal');
   }
-}
+}*/
 
 // Factory Constructors - use when instantiating instances with the same name many times
 /*class Mammal {
