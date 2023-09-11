@@ -10,6 +10,10 @@ void main() {
   runApp(const MyApp());
 }
 
+void test() {
+  print('main.dart running :)');
+}
+
 // tutorial code begins ***
 
 //****** CHP 6 - Dart Enumerations, Classes & Objects ******/
