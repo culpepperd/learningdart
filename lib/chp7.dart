@@ -8,13 +8,49 @@ void main() {
 
 //****** CHP 7 - Advanced Dart ******/
 
+// Future - data to be returned in the future
+
 // Extensions - Can be used to add functionality to an existing class
-class Mammal {
+/*class Mammal {
+  final String species;
   final String name;
-  Mammal(this.name);
+  Mammal(this.species, this.name);
+  /*void breathe() {
+    print('$species $name breathing from class');
+  }*/
 }
 
-void test() {}
+// Use an extension when you want to add
+// functionality that may not belong in the
+// class but you want it in the src file you're working in.
+extension Breathe on Mammal {
+  void breathe() {
+    print('$species $name is breathing');
+    // the use of $species and $name are examples of interpolation
+  }
+}
+
+class Person {
+  final String firstName;
+  final String middleName;
+  final String lastName;
+  Person(this.firstName, this.middleName, this.lastName);
+}
+
+extension FullName on Person {
+  String get fullName => '$firstName $middleName $lastName';
+}
+
+void test() {
+  final dog1 = Mammal('Dog', 'Jack Shepard');
+  final ferret1 = Mammal('Ferret', 'Mr. Squeaks');
+  print(dog1.species + ' ' + dog1.name);
+  dog1.breathe();
+  ferret1.breathe();
+
+  final me = Person('Daniel', 'Naseeb', 'Culpepper');
+  print(me.fullName);
+}*/
 
 // tutorial code ends ***
 
